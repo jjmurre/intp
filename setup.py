@@ -30,7 +30,7 @@ from setuptools import setup
 setup(
     name='intp',
     version='0.1',
-    url='http://example.com/intp/',
+    url='https://github.com/jjmurre/intp',
     license='BSD',
     author='Jan Murre',
     author_email='jan.murre@catalyz.nl',
@@ -42,6 +42,9 @@ setup(
     platforms='any',
     install_requires=[
     ],
+    entry_points={
+        "console_scripts": ['intp=intp:main'],
+    },
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
